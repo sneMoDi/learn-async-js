@@ -1,1 +1,4 @@
 Explain the code execution based on the order of the messages logged in src/quiz/promise-2darray.txt.
+
+Because both invocations of the sum function are asynchronous, they are processed simultaneously. Consequently, when an error occurs more quickly, it is promptly rejected and logged first. 
+Conversely, the computation of the actual array sum requires some time, leading to its delayed printing.
